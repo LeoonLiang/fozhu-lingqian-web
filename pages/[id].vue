@@ -297,6 +297,14 @@ function showSection(catId: string) {
 function getImageUrl(id: string, index: number) {
   return `https://cdn.jsdelivr.net/gh/LeoonLiang/xuanwu-fozu-lingqian@main/image/${parseInt(id)}_${index}.jpg`
 }
+
+// SEO Meta
+useSeoMeta({
+  title: () => data.value ? `${data.value.签号} ${data.value.签名} - 汕尾玄武山佛祖灵签` : '灵签详情',
+  description: () => data.value ? `汕尾玄武山佛祖灵签${data.value.签号}${data.value.签名}。${data.value.签文类型}。诗曰：${data.value.签文简介?.诗曰 || ''}` : '',
+  ogTitle: () => data.value ? `${data.value.签号} ${data.value.签名} - 汕尾玄武山佛祖灵签` : '灵签详情',
+  ogDescription: () => data.value ? `玄武佛祖灵签${data.value.签号}${data.value.签名}。${data.value.签文类型}。` : '',
+})
 </script>
 
 <style scoped>

@@ -1,6 +1,22 @@
-# 玄武山佛祖灵签 (Xuanwu Lingqian Web)
+<div align="center">
+  <h1>玄武山佛祖灵签</h1>
+  <a href="https://leoonliang.github.io/fozhu-lingqian-web/" target="_blank">
+    <img src="./public/preview.png" alt="玄武山佛祖灵签" width="600">
+  </a>
+  <br>
+  <p><strong>玄武山佛祖灵签 (Xuanwu Lingqian Web)</strong></p>
+  <p>基于 Nuxt 3 开发的在线求签应用，心诚则灵</p>
+  <p>
+    <a href="https://leoonliang.github.io/fozhu-lingqian-web/"><strong>📱 在线预览</strong></a>
+  </p>
+</div>
 
-玄武山佛祖灵签是一个基于 Nuxt 3 开发的在线求签应用。
+<p align="center">
+  <a href="./LICENSE"><img src="https://img.shields.io/github/license/LeoonLiang/fozhu-lingqian-web?style=flat-square" alt="License"></a>
+  <a href="https://github.com/LeoonLiang/fozhu-lingqian-web/stargazers"><img src="https://img.shields.io/github/stars/LeoonLiang/fozhu-lingqian-web?style=flat-square" alt="Stars"></a>
+  <a href="https://github.com/LeoonLiang/fozhu-lingqian-web/network/members"><img src="https://img.shields.io/github/forks/LeoonLiang/fozhu-lingqian-web?style=flat-square" alt="Forks"></a>
+  <img src="https://img.shields.io/badge/开源-MIT-blue?style=flat-square" alt="Open Source">
+</p>
 
 ## ✨ 特性
 
@@ -17,6 +33,7 @@
 - **包管理**: [pnpm](https://pnpm.io/)
 - **图标**: [Iconify](https://iconify.design/)
 - **部署**: GitHub Pages (via GitHub Actions)
+- **数据来源**: [xuanwu-fozu-lingqian](https://github.com/LeoonLiang/xuanwu-fozu-lingqian) (玄武山佛祖灵签数据集)
 
 ## 📦 本地开发
 
@@ -25,8 +42,8 @@
 ### 1. 克隆项目
 
 ```bash
-git clone https://github.com/leoon/xuanwu-lingqian-web.git
-cd xuanwu-lingqian-web
+git clone https://github.com/LeoonLiang/fozhu-lingqian-web.git
+cd fozhu-lingqian-web
 ```
 
 ### 2. 安装依赖

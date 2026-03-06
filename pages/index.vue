@@ -59,6 +59,16 @@
 <script setup lang="ts">
 import type { FortuneStickLite } from '~/types/lingqian'
 
+useSeoMeta({
+  title: '汕尾玄武山佛祖灵签 - 在线求签 | 五十一签解签',
+  description: '汕尾玄武山佛祖灵签在线求签，心诚则灵。本站提供完整的汕尾玄武山佛祖灵签五十一签解签，包含诗曰、家宅、岁君、生意、谋望、婚姻、出外、求财等详细运势解析。',
+  keywords: '汕尾玄武山佛祖灵签,佛祖灵签,观音灵签,在线求签,解签,抽签,算命,运势,汕尾玄武山,陆丰玄武山',
+  ogTitle: '汕尾玄武山佛祖灵签 - 在线求签 | 五十一签解签',
+  ogDescription: '汕尾玄武山佛祖灵签在线求签，心诚则灵。本站提供完整的玄武山佛祖灵签五十一签解签。',
+  ogImage: '/preview.png',
+  twitterCard: 'summary_large_image',
+})
+
 const DATA_URL = 'https://cdn.jsdelivr.net/gh/LeoonLiang/xuanwu-fozu-lingqian@main/data-lite/all.json';
 
 // 使用 useFetch 在构建时获取数据
