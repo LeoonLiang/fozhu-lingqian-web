@@ -42,9 +42,7 @@ export default defineNuxtConfig({
   },
 
   sitemap: {
-    sources: [
-      '/api/sitemap' // 如果将来有动态路由生成 sitemap
-    ]
+    // 自动扫描路由
   },
 
   robots: {
