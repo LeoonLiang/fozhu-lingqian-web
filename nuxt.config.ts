@@ -1,4 +1,6 @@
 // nuxt.config.ts
+const baseURL = process.env.NUXT_APP_BASE_URL || '/'
+
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
@@ -7,13 +9,21 @@ export default defineNuxtConfig({
   ssr: true,
 
   app: {
-    baseURL: process.env.NUXT_APP_BASE_URL || '/',
+    baseURL: baseURL,
     head: {
       title: '汕尾玄武山佛祖灵签',
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-        { name: 'description', content: '玄武山佛祖灵签在线求签' }
+        { name: 'description', content: '玄武山佛祖灵签在线求签' },
+        { name: 'theme-color', content: '#ffffff' }
+      ],
+      link: [
+        { rel: 'icon', type: 'image/x-icon', href: `${baseURL}favicon.ico` },
+        { rel: 'apple-touch-icon', sizes: '180x180', href: `${baseURL}apple-touch-icon.png` },
+        { rel: 'icon', type: 'image/png', sizes: '32x32', href: `${baseURL}favicon-32x32.png` },
+        { rel: 'icon', type: 'image/png', sizes: '16x16', href: `${baseURL}favicon-16x16.png` },
+        { rel: 'manifest', href: `${baseURL}site.webmanifest` }
       ]
     }
   },
