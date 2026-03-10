@@ -66,7 +66,7 @@ useSeoMeta({
   twitterCard: 'summary_large_image',
 })
 
-const DATA_URL = 'https://cdn.jsdelivr.net/gh/LeoonLiang/xuanwu-fozu-lingqian@main/data-lite/all.json';
+const DATA_URL = `https://cdn.jsdelivr.net/gh/LeoonLiang/xuanwu-fozu-lingqian@main/data-lite/all.json?t=${Date.now()}`;
 
 // 使用 useFetch 在构建时获取数据
 const { data: list, pending } = await useFetch<FortuneStickLite[]>(DATA_URL, {
