@@ -165,7 +165,6 @@
 </template>
 
 <script setup lang="ts">
-import html2canvas from 'html2canvas'
 import type { FortuneStick } from '~/types/lingqian'
 import { toJpeg } from 'html-to-image';
 const props = defineProps<{
