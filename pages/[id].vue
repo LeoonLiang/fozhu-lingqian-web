@@ -146,7 +146,12 @@
 
         <!-- Right Content Area -->
         <div class="flex-1 w-full space-y-6">
-          
+
+          <!-- 生成卡片按钮 -->
+          <div class="flex justify-end mb-4">
+            <CardGenerator v-if="data" :data="data" />
+          </div>
+
           <!-- Core Stick Info (Always visible or merged into overview) -->
           <div class="bg-xuanwu-paper shadow-antique rounded-sm p-1 relative">
             <div class="border-2 border-xuanwu-border border-double p-5 lg:p-8 bg-xuanwu-paper relative">
